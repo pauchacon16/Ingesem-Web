@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+// Importa funciones y variables de Bootstrap
+
+// Sobrescribe variables antes de importar Bootstrap
+@import 'styles/variables';
+
+// Import Bootstrap (variables above allow overrides)
+@import "bootstrap/scss/bootstrap";
+
+// Bootstrap icons
+@import "bootstrap-icons/font/bootstrap-icons.css";

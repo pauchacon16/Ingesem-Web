@@ -1,0 +1,71 @@
+/* Simple custom styles for the homepage */
+@use '../../styles/variables' as vars;
+
+.hero {
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.hero img {
+  max-height: 100%;
+  object-fit: cover;
+}
+
+/* Gradient fade effect: image column has overlay that fades to white towards the left */
+.hero {
+  position: relative;
+  z-index: 0;
+  background-image: url('/assets/Blog-amarillo.webp');
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+  min-height: 520px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* fade from left (white) to transparent towards right */
+  background: linear-gradient(90deg, #F7F7F7 0%, rgba(255,255,255,0.95) 16%, rgba(255,255,255,0.7) 32%, rgba(255,255,255,0) 60%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.col-content {
+  position: relative;
+  z-index: 2;
+}
+
+.card img {
+  height: 180px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .hero img {
+    max-height: 220px;
+  }
+
+  .w-200px {
+    width: 100%;
+  }
+}
+
+.w-200px{
+  width: 200px;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  border-bottom: 2px solid vars.$secondary !important;
+  color: vars.$primary !important;
+}
+
+.translate-middle-40 {
+  transform: translate(-50%, -40%) !important;
+}
+
+.padding-bottom-70 {
+  padding-bottom: 70px !important;
+}
