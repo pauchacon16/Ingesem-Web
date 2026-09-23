@@ -27,8 +27,8 @@
         </button>
         <div class="collapse navbar-collapse" id="mainNav">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link fw-bold active" href="#">INICIO</a></li>
-                <li class="nav-item"><a class="nav-link fw-bold" href="#">NOSOTROS</a></li>
+                <li class="nav-item"><a class="nav-link fw-bold active" href="#home">INICIO</a></li>
+                <li class="nav-item"><a class="nav-link fw-bold" href="#nosotros">NOSOTROS</a></li>
                 <li class="nav-item"><a class="nav-link fw-bold" href="#servicios">SERVICIOS</a></li>
                 <li class="nav-item"><a class="nav-link fw-bold" href="#maquinaria">MAQUINARIA</a></li>
                 <li class="nav-item"><a class="nav-link fw-bold" href="#proyectos">PROYECTOS</a></li>
@@ -40,197 +40,90 @@
 </header>
 
 <main>
-    <section class="hero py-5 padding-bottom-70 position-relative">
+    <section class="hero py-5 padding-bottom-70 position-relative" id="home">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-12 col-lg-4 col-content">
+                <div class="col-8 col-md-7 col-lg-5 col-xl-4 col-content">
                     <div class="d-flex justify-content-start">
-                        <div class="rounded-pill bg-secondary text-white fs-6 fw-bold px-2">CONSTRUIMOS</div>
+                        <div class="rounded-pill bg-secondary text-white fs-6 fw-bolder px-2">CONSTRUIMOS</div>
                     </div>
-                    <h1 class="display-5 fw-bold"><span class="text-primary fw-bold fst-italic">PROYECTOS,<br>
+                    <h1 class="display-5 fw-bold"><span class="text-primary fw-bolder fst-italic">PROYECTOS,<br>
                             MOVEMOS</span>
                         <br>
-                        <span class="text-secondary fw-bold fst-italic">DESARROLLO</span>
+                        <span class="text-secondary fw-bolder fst-italic">DESARROLLO</span>
                     </h1>
-                    <p class="lead">Ofrecemos soluciones integrales en construcción y alquiler de maquinaria pesada con
+                    <p class="lead" class="fw-semisemibold">Ofrecemos soluciones integrales en construcción y alquiler de maquinaria pesada con
                         compromiso, seguridad y eficiencia.</p>
-                    <div class="mt-4">
-                        <a class="btn btn-primary text-white fw-bold me-3 px-3" href="#servicios"><i
+                    <div class="d-grid d-md-flex gap-3">
+                        <a class="btn btn-primary text-white fw-bold px-3" href="#servicios"><i
                                 class="bi bi-mailbox2-flag me-2"></i>CONOCE MÁS</a>
                         <a class="btn btn-success text-white fw-bold px-3" href="#"><i
                                 class="bi bi-whatsapp me-2"></i>COTIZAR AHORA</a>
                     </div>
                 </div>
-                </div>
-                </div>
-                <div class="position-absolute container top-100 start-50 translate-middle-40 bg-white rounded-4 shadow-sm px-4 py-3"
-                    style="z-index: 3;">
-            <div class="d-flex justify-content-between gap-4">
-                <div class="d-grid d-lg-flex gap-3">
-                    <div class="d-flex justify-content-center">
-                        <i class="bi bi-shield-check display-6 text-primary"></i>
-                    </div>
-                    <div class="d-grid gap-2">
-                        <strong class="text-primary">SEGURIDAD</strong>
-                        <span class="d-none d-lg-block">Trabajamos bajo altos estándares de seguridad.</span>
-                    </div>
-                </div>
-                <div class="d-grid d-lg-flex gap-3">
-                    <div class="d-flex justify-content-center">
-                        <i class="bi bi-gear display-6 text-primary"></i>
-                    </div>
-                    <div class="d-grid gap-2">
-                        <strong class="text-primary">EXPERIENCIA</strong>
-                        <span class="d-none d-lg-block">Contamos con personal calificado y maquinaria de última generación.</span>
-                    </div>
-                </div>
-                <div class="d-grid d-lg-flex gap-3">
-                    <div class="d-flex justify-content-center">
-                        <i class="bi bi-bullseye display-6 text-primary"></i>
-                    </div>
-                    <div class="d-grid gap-2">
-                        <strong class="text-primary">COMPROMISO</strong>
-                        <span class="d-none d-lg-block">Cumplimos con los tiempos y necesidades de cada proyecto.</span>
-                    </div>
-                </div>
-                <div class="d-grid d-lg-flex gap-3">
-                    <div class="d-flex justify-content-center">
-                        <i class="bi bi-leaf display-6 text-primary"></i>
-                    </div>
-                    <div class="d-grid gap-2">
-                        <strong class="text-primary">SOSTENIBILIDAD</strong>
-                        <span class="d-none d-lg-block">Construimos con responsabilidad y respeto por el entorno.</span>
-                    </div>
-                </div>
             </div>
+        </div>
+        <div class="position-absolute container top-100 start-50 translate-middle-40 bg-white rounded-4 shadow-sm px-2 px-md-4 py-3"
+            style="z-index: 3;" id="nosotros">
+            <app-nosotros/>
         </div>
     </section>
 
-    <section id="servicios" class="py-5 mt-5">
-        <div class="container">
-            <h2 class="h3 mb-4">Nuestros servicios</h2>
-            <div class="row g-3">
-                <div class="col-md-3">
-                    <div class="card h-100 text-center p-3">
-                        <i class="bi bi-shield-lock display-6 text-primary"></i>
-                        <h5 class="mt-3">Seguridad</h5>
-                        <p class="small">Altos estándares de seguridad.</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card h-100 text-center p-3">
-                        <i class="bi bi-gear display-6 text-primary"></i>
-                        <h5 class="mt-3">Experiencia</h5>
-                        <p class="small">Personal calificado y maquinaria moderna.</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card h-100 text-center p-3">
-                        <i class="bi bi-clock display-6 text-primary"></i>
-                        <h5 class="mt-3">Compromiso</h5>
-                        <p class="small">Cumplimos con tiempos y necesidades.</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card h-100 text-center p-3">
-                        <i class="bi bi-leaf display-6 text-primary"></i>
-                        <h5 class="mt-3">Sostenibilidad</h5>
-                        <p class="small">Responsabilidad y respeto por el entorno.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section id="servicios" class="pt-5 mt-5 pb-1">
+        <app-servicios/>
     </section>
 
-    <section id="maquinaria" class="bg-white py-5">
-        <div class="container">
-            <h2 class="h3 mb-4">Alquiler de maquinaria pesada</h2>
-            <div class="row g-3">
-                <div class="col-md-3">
-                    <div class="card h-100">
-                        <img src="/assets/excavator.svg" class="card-img-top" alt="Excavadora">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Excavadora</h5>
-                            <p class="small">Excavaciones y movimiento de tierras.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card h-100">
-                        <img src="/assets/backhoe.svg" class="card-img-top" alt="Retroexcavadora">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Retroexcavadora</h5>
-                            <p class="small">Versátil para múltiples aplicaciones.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card h-100">
-                        <img src="/assets/truck.svg" class="card-img-top" alt="Volqueta">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Volqueta</h5>
-                            <p class="small">Transporte de materiales y escombros.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card h-100">
-                        <img src="/assets/loader.svg" class="card-img-top" alt="Minicargador">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Minicargador</h5>
-                            <p class="small">Ideal para espacios reducidos.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section id="maquinaria" class="bg-white pb-3">
+        <app-maquinaria/>
     </section>
 
     <section id="proyectos" class="py-5">
-        <div class="container">
-            <h2 class="h3 mb-4">Nuestros proyectos</h2>
-            <div class="row g-3">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="/assets/project1.svg" class="card-img-top" alt="Proyecto 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Construcción de vía rural</h5>
-                            <p class="small text-muted">San Gil, Santander</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="/assets/project2.svg" class="card-img-top" alt="Proyecto 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Placa huella</h5>
-                            <p class="small text-muted">Curití, Santander</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="/assets/project3.svg" class="card-img-top" alt="Proyecto 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Movimiento de tierras</h5>
-                            <p class="small text-muted">Piedecuesta, Santander</p>
-                        </div>
-                    </div>
+        <app-proyectos/>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-main container">
+            <div class="footer-brand align-items-center align-items-md-start">
+                <a class="footer-logo" href="#home" aria-label="Volver al inicio">
+                    <img src="/assets/logo.svg" alt="INGESEM">
+                </a>
+                <p>Construimos proyectos,<br>movemos desarrollo.</p>
+            </div>
+
+            <div class="footer-column">
+                <h2>Servicios</h2>
+                <ul>
+                    <li>Obras civiles</li>
+                    <li>Movimiento de tierras</li>
+                    <li>Concretos</li>
+                    <li>Urbanismo</li>
+                </ul>
+            </div>
+
+            <div class="footer-column footer-contact">
+                <h2>Contacto</h2>
+                <address>
+                    <span><i class="bi bi-geo-alt-fill" aria-hidden="true"></i>San Gil, Santander, Colombia</span>
+                    <a href="tel:+573101234567"><i class="bi bi-telephone-fill" aria-hidden="true"></i>310 123 4567</a>
+                    <a href="mailto:contacto@ingesem.com"><i class="bi bi-envelope-fill" aria-hidden="true"></i>contacto@ingesem.com</a>
+                    <span><i class="bi bi-clock-fill" aria-hidden="true"></i>Lunes a viernes: 7:00 a. m. - 5:00 p. m.</span>
+                </address>
+            </div>
+
+            <div class="footer-column footer-social">
+                <h2>Síguenos</h2>
+                <div class="social-links d-flex justify-content-center">
+                    <a href="#" aria-label="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
-    </section>
 
-    <footer class="bg-dark text-white py-4">
-        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
-            <div>
-                <strong>INGESEM</strong>
-                <div class="small">San Gil, Santander, Colombia</div>
-            </div>
-            <div class="mt-3 mt-md-0">
-                <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="text-white"><i class="bi bi-whatsapp"></i></a>
+        <div class="footer-bottom">
+            <div class="container">
+                <span>&copy; 2025 INGESEM. Todos los derechos reservados.</span>
+                <span>Construimos un mejor futuro.</span>
             </div>
         </div>
     </footer>

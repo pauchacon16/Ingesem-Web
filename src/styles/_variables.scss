@@ -1,3 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&display=swap');
 $primary: #002559; // Naranja personalizado
 $secondary: #DD5815; // Gris azulado
 $success: #17972A; // Verde
+
+// Definir variables SCSS para reutilizar
+$font-primary: 'Montserrat', sans-serif;
+
+*:not(i):not([class*="bi-"]):not([class*="bi"]) {
+  font-family: $font-primary !important;
+}
+
+// Aplicar globalmente
+body {
+  font-family: $font-primary;
+}
+
+h1, h2, h3, .heading-bold {
+  font-family: $font-primary;
+  font-weight: 800; // Para el estilo grueso como el del diseño
+}
