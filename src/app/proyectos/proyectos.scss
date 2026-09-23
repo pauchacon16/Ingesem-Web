@@ -6,10 +6,9 @@
 
 .projects-showcase {
 	display: grid;
-	grid-template-columns: minmax(300px, 0.8fr) minmax(0, 3.2fr);
+	grid-template-columns: minmax(300px, 1fr) minmax(0, 2fr);
 	align-items: center;
 	gap: clamp(1.5rem, 3vw, 3.75rem);
-	max-width: 1320px;
 	margin: 0 auto;
 	padding: 1.5rem max(1rem, calc((100vw - 1320px) / 2));
 }

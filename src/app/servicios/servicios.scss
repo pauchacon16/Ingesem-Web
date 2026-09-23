@@ -6,8 +6,10 @@
 
 .services-showcase {
 	display: grid;
-	grid-template-columns: minmax(400px, 0.8fr) minmax(0, 2.7fr);
+	grid-template-columns: minmax(400px, 1fr) minmax(0, 2fr);
 	min-height: 360px;
+	max-width: 1440px;
+	margin: 0 auto;
 	background: #fff;
 	overflow: hidden;
 }
@@ -88,9 +90,7 @@
 	grid-template-columns: repeat(4, minmax(0, 1fr));
 	gap: clamp(0.75rem, 1.4vw, 1.35rem);
 	align-items: center;
-	max-width: 1160px;
-	padding: 2.75rem max(1.5rem, calc((100vw - 1320px) / 2)) 2.75rem 2.75rem;
-	margin-left: -1.5rem;
+	padding: 2.75rem;
 }
 
 .service-card {
@@ -273,8 +273,8 @@
 }
 
 .rounded-image{
-    border-radius-top-left: 1rem;
-    border-radius-top-right: 1rem; 
+	border-top-left-radius: 1rem;
+	border-top-right-radius: 1rem; 
 }
 
 @media (max-width: 767px){
