@@ -38,6 +38,20 @@ This will compile your project and store the build artifacts in the `dist/` dire
 
 ## Running unit tests
 
+## Deploying with GitHub Actions
+
+The workflow in `.github/workflows/main.yml` builds the application on pull requests and deploys it to GitHub Pages after every push to `main`.
+
+To enable the deployment:
+
+1. Open **Settings > Pages** in the repository.
+2. Under **Build and deployment**, select **GitHub Actions** as the source.
+3. Push the workflow to `main` and wait for the **Build and deploy Angular app** workflow to finish.
+
+The deployed site will be available at `https://pauchacon16.github.io/Ingesem-Web/`.
+
+GitHub Pages serves the generated browser output from `dist/ingesem-web/browser`. The project also includes Angular SSR, but running the SSR server requires a Node-compatible host such as Render, Railway, or Azure App Service.
+
 To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
 
 ```bash
